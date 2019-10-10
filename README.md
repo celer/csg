@@ -28,7 +28,7 @@ You should also investigate SDFs as a better alternative to traditional CSG meth
 
 will result in:
 
-[Image of resulting subtraction](/images/subtract.png)
+![Image of resulting subtraction](/images/subtract.png)
 
 
 ## Hulling shapes:
