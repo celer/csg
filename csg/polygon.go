@@ -77,7 +77,7 @@ func (p *Polygon) Flip() {
 
 // MarshalToASCIISTL will write this polygon out as ASCII STL
 func (p *Polygon) MarshalToASCIISTL(out io.Writer) {
-	fmt.Fprintf(out, "facet Normal %f %f %f\n", p.Plane.Normal.X, p.Plane.Normal.Y, p.Plane.Normal.Z)
+	fmt.Fprintf(out, "facet normal %f %f %f\n", p.Plane.Normal.X, p.Plane.Normal.Y, p.Plane.Normal.Z)
 	fmt.Fprintf(out, "\touter loop\n")
 	for _, v := range p.Vertices {
 		v.Position.MarshalToASCIISTL(out)
